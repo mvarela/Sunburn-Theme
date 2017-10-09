@@ -1,3 +1,9 @@
+#+TITLE: README
+#+DATE: <2017-10-09 Mon>
+#+AUTHOR: Martín Varela
+#+EMAIL: martin@varela.fi
+#+LANGUAGE: en
+
 * Sunburn Theme for Emacs and iTerm2
 ** Overview
 This is a low-contrast theme for Emacs and iTerm2. After using Zenburn for
@@ -69,3 +75,6 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+© 2017, Martín Varela (martin@varela.fi)
