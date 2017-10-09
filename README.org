@@ -1,0 +1,71 @@
+* Sunburn Theme for Emacs and iTerm2
+** Overview
+This is a low-contrast theme for Emacs and iTerm2. After using Zenburn for
+several years, I decided I wanted something a bit different, but in the same
+spirit, so I went looking for colors I liked. I've always liked the palette of
+old Sun workstations and boxes, combining shades of gray and purple. 
+
+Turns out, they don't work very well for text, but they did provide a starting
+point for exploration. The main palette for this theme looks like this:
+
+
+#+NAME: fig:palette
+#+CAPTION: Sunburn palette
+#+ATTR_ORG: :width 60
+#+ATTR_HTML: :width 60px
+[[file:./img/palette.png]]
+
+
+In use, it looks like this:
+
+
+#+NAME: fig:screen1
+#+CAPTION: Org-mode / Clojure
+#+ATTR_ORG: :width 1200
+#+ATTR_HTML: :width 1200px
+[[file:./img/screen1.png]]
+
+
+#+NAME: fig:screen2
+#+CAPTION: Emacs lisp / LaTeX
+#+ATTR_ORG: :width 1200
+#+ATTR_HTML: :width 1200px
+[[file:./img/screen2.png]]
+
+
+Since I also use iTerm2 quite a bit, I did a port of the theme to it.
+
+
+#+NAME: fig:iterm
+#+CAPTION: iTerm2
+#+ATTR_ORG: :width 970
+#+ATTR_HTML: :width 970px
+[[file:./img/iterm.png]]
+
+** Installation
+
+ For iTerm, simply import the theme from the drop-down in the =Preferences →
+ Profiles → Colors= pane. 
+
+ For Emacs, do the following:
+
+#+BEGIN_SRC emacs-lisp :exports code :results silent
+  (add-to-list 'custom-theme-load-path "path/where/you/put/the/theme/")
+  (load-theme 'sunburn)
+#+END_SRC
+
+
+** License
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
