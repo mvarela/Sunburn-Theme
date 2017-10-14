@@ -778,6 +778,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(ledger-font-report-clickable-face ((t (:foreground ,sunburn-orange :weight normal))))
 ;;;;; linum-mode
    `(linum ((t (:foreground ,sunburn-green+2 :background ,sunburn-bg))))
+;;;;; Line numbers in Emacs 26
+   `(line-number ((t (:foreground ,sunburn-bg+3 :background ,sunburn-bg))))
+   `(line-number-current-line ((t (:foreground ,sunburn-green+1 :background ,sunburn-bg))))
 ;;;;; lispy
    `(lispy-command-name-face ((t (:background ,sunburn-bg-05 :inherit font-lock-function-name-face))))
    `(lispy-cursor-face ((t (:foreground ,sunburn-bg :background ,sunburn-fg))))
