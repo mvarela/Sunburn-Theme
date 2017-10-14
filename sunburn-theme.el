@@ -1,5 +1,4 @@
-;;; sunburn-theme.el --- A low contrast color theme for Emacs.
-
+;;; sunburn-theme.el --- A low contrast color theme
 
 ;; Copyright © 2017 Martín Varela
 ;; Copyright (C) 2011-2016 Bozhidar Batsov (zenburn-theme.el)
@@ -7,6 +6,7 @@
 ;; Author: Martín Varela (martin@varela.fi)
 ;; URL: http://github.com/mvarela/Sunburn-Theme
 ;; Version: 1.0
+;; Package-Requires: ((emacs "24"))
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -27,7 +27,9 @@
 ;; of the new built-in theme support in Emacs 24.
 
 ;;; Credits:
+
 ;; This code is based off Bozhidar Batsov's port of the Zenburn theme
+
 ;;; Code:
 
 (deftheme sunburn "The Sunburn color theme")
@@ -1058,7 +1060,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(p4-diff-ins-face ((t :inherit diff-added)))
 ;;;;; perspective
    `(persp-selected-face ((t (:foreground ,sunburn-yellow-2 :inherit mode-line))))
-;;;;; 
+;;;;;
    `(powerline-active1 ((t (:background ,sunburn-bg-05 :inherit mode-line))))
    `(powerline-active2 ((t (:background ,sunburn-bg+2 :inherit mode-line))))
    `(powerline-inactive1 ((t (:background ,sunburn-bg+1 :inherit mode-line-inactive))))
@@ -1358,38 +1360,6 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(vc-annotate-background ,sunburn-bg-1)
    ))
 
-;;; Rainbow Support
-
-(declare-function rainbow-mode 'rainbow-mode)
-(declare-function rainbow-colorize-by-assoc 'rainbow-mode)
-
-(defvar sunburn-add-font-lock-keywords nil
-  "Whether to add font-lock keywords for sunburn color names.
-In buffers visiting library `sunburn-theme.el' the sunburn
-specific keywords are always added.  In all other Emacs-Lisp
-buffers this variable controls whether this should be done.
-This requires library `rainbow-mode'.")
-
-(defvar sunburn-colors-font-lock-keywords nil)
-
-;; (defadvice rainbow-turn-on (after sunburn activate)
-;;   "Maybe also add font-lock keywords for sunburn colors."
-;;   (when (and (derived-mode-p 'emacs-lisp-mode)
-;;              (or sunburn-add-font-lock-keywords
-;;                  (equal (file-name-nondirectory (buffer-file-name))
-;;                         "sunburn-theme.el")))
-;;     (unless sunburn-colors-font-lock-keywords
-;;       (setq sunburn-colors-font-lock-keywords
-;;             `((,(regexp-opt (mapcar 'car sunburn-colors-alist) 'words)
-;;                (0 (rainbow-colorize-by-assoc sunburn-colors-alist))))))
-;;     (font-lock-add-keywords nil sunburn-colors-font-lock-keywords)))
-
-;; (defadvice rainbow-turn-off (after sunburn activate)
-;;   "Also remove font-lock keywords for sunburn colors."
-;;   (font-lock-remove-keywords nil sunburn-colors-font-lock-keywords))
-
-;;; Footer
-
 ;;;###autoload
 (and load-file-name
      (boundp 'custom-theme-load-path)
@@ -1402,6 +1372,5 @@ This requires library `rainbow-mode'.")
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; indent-tabs-mode: nil
-;; eval: (when (require 'rainbow-mode nil t) (rainbow-mode 1))
 ;; End:
 ;;; sunburn-theme.el ends here
