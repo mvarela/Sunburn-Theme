@@ -816,7 +816,7 @@ Also bind `class' to ((class color) (min-colors 89))."
      ((t (:underline t))))
 ;;;;; magit
 ;;;;;; headings and diffs
-   `(magit-section-highlight           ((t (:background ,sunburn-bg+05))))
+   `(magit-section-highlight           ((t (:background ,sunburn-bg-1 :foreground ,sunburn-fg-1))))
    `(magit-section-heading             ((t (:foreground ,sunburn-yellow :weight bold))))
    `(magit-section-heading-selection   ((t (:foreground ,sunburn-orange :weight bold))))
    `(magit-diff-file-heading           ((t (:weight bold))))
