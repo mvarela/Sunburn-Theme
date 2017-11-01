@@ -829,8 +829,8 @@ Also bind `class' to ((class color) (min-colors 89))."
                                                         :foreground ,sunburn-orange))))
    `(magit-diff-lines-heading          ((t (:background ,sunburn-orange
                                                         :foreground ,sunburn-bg+2))))
-   `(magit-diff-context-highlight      ((t (:background ,sunburn-bg+05
-                                                        :foreground "grey70"))))
+   `(magit-diff-context-highlight      ((t (:background ,sunburn-bg-1
+                                                        :foreground sunburn-fg-1))))
    `(magit-diffstat-added   ((t (:foreground ,sunburn-green+4))))
    `(magit-diffstat-removed ((t (:foreground ,sunburn-red))))
 ;;;;;; popup
