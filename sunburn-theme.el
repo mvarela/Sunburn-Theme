@@ -1044,6 +1044,17 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-block-begin-line ((t :background ,sunburn-bg-1 :foreground ,sunburn-yellow)))
    `(org-block-end-line ((t :background ,sunburn-bg-1 :foreground ,sunburn-yellow)))
    `(org-block ((t :background ,sunburn-bg :foreground ,sunburn-fg+1)))
+;;;;; ein
+   `(ein:cell-input-prompt ((t (:foreground ,sunburn-cyan))))
+   `(ein:cell-input-area ((t :background ,sunburn-bg-1)))
+   `(ein:cell-heading-1 ((t (:weight bold :foreground ,sunburn-yellow))))
+   `(ein:cell-heading-2 ((t (:weight bold :foreground ,sunburn-blue+1))))
+   `(ein:cell-heading-3 ((t (:weight bold :foreground ,sunburn-orange))))
+   `(ein:cell-heading-4 ((t (:weight bold :foreground ,sunburn-cyan))))
+   `(ein:cell-heading-5 ((t (:weight bold :foreground ,sunburn-green))))
+   `(ein:cell-heading-6 ((t (:weight bold :foreground ,sunburn-red))))
+   `(ein:cell-output-stderr ((t (:weight bold :foreground ,sunburn-red :weight bold :underline nil))))
+   `(ein:cell-output-prompt ((t (:foreground ,sunburn-green+3))))
 ;;;;; outline
    `(outline-1 ((t (:foreground ,sunburn-orange))))
    `(outline-2 ((t (:foreground ,sunburn-green+4))))
