@@ -175,7 +175,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(trailing-whitespace ((t (:background ,sunburn-red))))
    `(vertical-border ((t (:foreground ,sunburn-fg))))
 ;;;;; font lock
-   `(font-lock-builtin-face ((t (:foreground ,sunburn-fg :weight bold))))
+   `(font-lock-builtin-face ((t (:foreground ,sunburn-fg-1, :weight bold))))
    `(font-lock-comment-face ((t (:background ,sunburn-bg :foreground ,sunburn-bg+3))))
    `(font-lock-comment-delimiter-face ((t (:background ,sunburn-bg :foreground ,sunburn-bg+3))))
    `(font-lock-constant-face ((t (:foreground ,sunburn-blue+1))))
