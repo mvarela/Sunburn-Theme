@@ -823,15 +823,16 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(magit-diff-file-heading-highlight ((t (:background ,sunburn-bg+05  :weight bold))))
    `(magit-diff-file-heading-selection ((t (:background ,sunburn-bg+05
                                                         :foreground ,sunburn-orange :weight bold))))
-   `(magit-diff-hunk-heading           ((t (:background ,sunburn-bg+1))))
-   `(magit-diff-hunk-heading-highlight ((t (:background ,sunburn-bg+2))))
+   `(magit-diff-hunk-heading           ((t (:background ,sunburn-bg-05))))
+   `(magit-diff-hunk-heading-highlight ((t (:foreground ,sunburn-bg-05 :background ,sunburn-gold))))
    `(magit-diff-hunk-heading-selection ((t (:background ,sunburn-bg+2
                                                         :foreground ,sunburn-orange))))
-   `(magit-diff-lines-heading          ((t (:background ,sunburn-orange
-                                                        :foreground ,sunburn-bg+2))))
+   `(magit-diff-lines-heading          ((t (:background ,sunburn-red+1
+                                                        :foreground ,sunburn-bg-2))))
    `(magit-diff-context-highlight      ((t (:background ,sunburn-bg-1
                                                         :foreground ,sunburn-fg-1))))
    `(magit-diffstat-added   ((t (:foreground ,sunburn-green+4))))
+   `(magit-diff-whitespace-warning ((t (:background ,sunburn-red :foreground ,sunburn-fg+1))))
    `(magit-diffstat-removed ((t (:foreground ,sunburn-red))))
 ;;;;;; popup
    `(magit-popup-heading             ((t (:foreground ,sunburn-yellow  :weight bold))))
