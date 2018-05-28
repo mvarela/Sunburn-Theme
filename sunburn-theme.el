@@ -157,7 +157,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(lazy-highlight ((t (:foreground ,sunburn-yellow-2 :weight bold :background ,sunburn-bg-05))))
 
    `(menu ((t (:foreground ,sunburn-fg :background ,sunburn-bg))))
-   `(minibuffer-prompt ((t (:foreground ,sunburn-yellow))))
+   `(minibuffer-prompt ((t (:background ,sunburn-bg-05 :foreground ,sunburn-yellow))))
    `(mode-line
      ((,class (:foreground ,sunburn-fg+1
                            :background ,sunburn-bg-05
