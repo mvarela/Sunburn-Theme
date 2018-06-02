@@ -643,8 +643,8 @@ Also bind `class' to ((class color) (min-colors 89))."
                       :underline nil
                       :weight bold
                       :box (:line-width -1 :style released-button)))))
-   `(helm-selection ((t (:background ,sunburn-bg+1 :underline nil))))
-   `(helm-selection-line ((t (:background ,sunburn-bg+1))))
+   `(helm-selection ((t (:background ,sunburn-bg-05 :foreground ,sunburn-gold :weight bold))))
+   `(helm-selection-line ((t (:background ,sunburn-bg-05 :foreground ,sunburn-gold :weight bold))))
    `(helm-visible-mark ((t (:foreground ,sunburn-bg :background ,sunburn-yellow-2))))
    `(helm-candidate-number ((t (:foreground ,sunburn-green+4 :background ,sunburn-bg-1))))
    `(helm-separator ((t (:foreground ,sunburn-red :background ,sunburn-bg))))
