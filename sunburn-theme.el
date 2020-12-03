@@ -160,14 +160,16 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(minibuffer-prompt ((t (:background ,sunburn-bg-05 :foreground ,sunburn-yellow))))
    `(mode-line
      ((,class (:foreground ,sunburn-fg+1
-                           :background ,sunburn-bg-05
-                           :box (:line-width -1 :style released-button)))
+                           :background ,sunburn-bg-2
+                          ; :box (:line-width -1 :style released-button)
+                           ))
       (t :inverse-video t)))
    `(mode-line-buffer-id ((t (:foreground ,sunburn-fg-1 :weight bold))))
    `(mode-line-inactive
      ((t (:foreground ,sunburn-blue-1
                       :background ,sunburn-bg-05
-                      :box (:line-width -1 :style released-button)))))
+                     ; :box (:line-width -1 :style released-button)
+                      ))))
    ;; `(region ((,class (:background ,sunburn-gold))
    ;;           (t :inverse-video t)))
    `(region ((t (:foreground ,sunburn-bg-05  :background ,sunburn-gold :reverse-video t))))
